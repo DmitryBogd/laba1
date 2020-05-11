@@ -1,0 +1,80 @@
+<html>
+ <head>
+  <meta charset="utf-8">
+  <script> 
+  window.onload = function() {
+  var canvas = document.getElementById('square');
+  if (canvas.getContext) {
+    var ctx = canvas.getContext('2d');
+
+    ctx.fillRect(25,25,100,100);
+    ctx.clearRect(45,45,60,60);
+    ctx.strokeRect(50,50,50,50);
+  }
+}
+</script> 
+ </head>
+ <body>
+  <header>
+    <h1>L1</h1>
+	<nav><a href="1.html">Главная</a> | <a href="2.html">Меню</a> |
+       <a href="3.html">Магазин</a> | <a href="4.html">Корзина</a></nav>
+  </header>
+  <main>
+  <article>
+    article
+  </article>
+    <aside>
+   <p>Ссылка1</p>
+   <p>Ссылка2</p>
+   <p>Ссылка3</p>
+  </aside>
+  </main>
+  <section>
+  <audio controls>
+    <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis">
+  </audio>
+  <bdi>שבת</bdi>
+  <canvas id="square" width="200" height="200">
+    <p>Ваш браузер не поддерживает рисование.</p>
+  </canvas>
+  <p>Выберите город :</p>
+  <p><input list="character">
+   <datalist id="character">
+    <option value="Киев"></option>
+    <option value="Москва"></option>
+    <option value="Минск"></option>
+   </datalist></p>
+   <summary>Что там?</summary>
+   <details>Скрытый текст</details>
+   <dialog open>
+  <p>Диалог!</p>
+</dialog>
+</section>
+<figure>
+ <embed src="images/mouse.swf" width="400" height="300" 
+           type="application/x-shockwave-flash"
+           pluginspage="http://www.macromedia.com/go/getflashplayer"> 
+		   <figcaption>Пустая картинка</figcaption>
+<figure>
+<mark>текст</mark>
+<menu label="Правка">
+      <button type="button">Копировать</button>
+      <button type="button">Вырезать</button>
+      <button type="button">Вставить</button>
+     </menu>
+	 <p>Температура воды</p>
+  <meter value="0" max="100" low="10" high="60">Низкая</meter>
+  <meter value="30" max="100" low="10" high="60">Нормальная</meter>
+  <meter value="80" max="100" low="10" high="60">Горячая</meter>
+  <meter value="100" max="100">Кипяток</meter>
+  <form oninput="result.value=(cm.value*27)">
+    <p>Введите сумму в долларах:  
+    <input type="number" name="cm" autofocus></p>
+    <p>Конвертация долларов в гривны: <output name="result">0</output></p>
+	<p><time>1957-10-04</time></p>
+  <footer>
+    Футер
+  </footer>
+ </body>
+</html>
